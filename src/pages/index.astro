@@ -1,0 +1,317 @@
+---
+
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>CV - David Alberto Garcia Amaro</title>
+		<style>
+			:root {
+				--primary-color: #2c3e50;
+				--secondary-color: #3498db;
+				--accent-color: #e74c3c;
+				--light-color: #ecf0f1;
+				--dark-color: #2c3e50;
+				--shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			body {
+				background-color: #f5f5f5;
+				color: var(--dark-color);
+				line-height: 1.6;
+			}
+
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: white;
+				box-shadow: var(--shadow);
+			}
+
+			header {
+				background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+				color: white;
+				padding: 40px 20px;
+				text-align: center;
+				border-radius: 5px 5px 0 0;
+				margin-bottom: 20px;
+			}
+
+			.profile-img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				border: 5px solid white;
+				margin: 0 auto 20px;
+				display: block;
+				background-color: var(--light-color);
+				line-height: 150px;
+				font-size: 60px;
+			}
+
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 10px;
+			}
+
+			.tagline {
+				font-size: 1.2rem;
+				opacity: 0.9;
+			}
+
+			.section {
+				padding: 20px;
+				margin-bottom: 20px;
+				background: white;
+				border-left: 4px solid var(--secondary-color);
+				border-radius: 0 5px 5px 0;
+				box-shadow: var(--shadow);
+			}
+
+			h2 {
+				color: var(--secondary-color);
+				margin-bottom: 15px;
+				padding-bottom: 5px;
+				border-bottom: 2px solid var(--light-color);
+			}
+
+			.contact-info {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-top: 15px;
+			}
+
+			.contact-item {
+				margin: 10px 15px;
+				display: flex;
+				align-items: center;
+			}
+
+			.skills {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+			}
+
+			.skill {
+				background-color: var(--light-color);
+				padding: 8px 15px;
+				border-radius: 20px;
+				font-size: 0.9rem;
+				border-left: 3px solid var(--secondary-color);
+			}
+
+			.timeline-item {
+				position: relative;
+				padding-left: 30px;
+				margin-bottom: 20px;
+			}
+
+			.timeline-item::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 5px;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: var(--secondary-color);
+			}
+
+			.timeline-item::after {
+				content: '';
+				position: absolute;
+				left: 7px;
+				top: 20px;
+				width: 1px;
+				height: calc(100% + 10px);
+				background-color: var(--light-color);
+			}
+
+			.timeline-item:last-child::after {
+				display: none;
+			}
+
+			.timeline-period {
+				font-size: 0.9rem;
+				color: var(--secondary-color);
+				font-weight: bold;
+			}
+
+			.timeline-title {
+				font-weight: bold;
+				margin: 5px 0;
+			}
+
+			.interests {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+			}
+
+			.interest {
+				background-color: var(--light-color);
+				padding: 8px 15px;
+				border-radius: 20px;
+				font-size: 0.9rem;
+				border-left: 3px solid var(--accent-color);
+			}
+
+			footer {
+				text-align: center;
+				margin-top: 20px;
+				padding: 20px;
+				color: var(--dark-color);
+				font-size: 0.9rem;
+			}
+
+			@media (max-width: 768px) {
+				.container {
+					padding: 10px;
+				}
+				
+				header {
+					padding: 20px 10px;
+				}
+				
+				.profile-img {
+					width: 120px;
+					height: 120px;
+					line-height: 120px;
+					font-size: 48px;
+				}
+				
+				h1 {
+					font-size: 2rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="profile-img">DA</div>
+				<h1>David Alberto Garcia Amaro</h1>
+				<p class="tagline">Estudiante Universitario | UAT</p>
+				
+				<div class="contact-info">
+					<div class="contact-item">
+						📧 david.garcia@estudiantes.uat.edu.mx
+					</div>
+					<div class="contact-item">
+						📱 (999) 123-4567
+					</div>
+					<div class="contact-item">
+						📍 Tamaulipas, México
+					</div>
+				</div>
+			</header>
+			
+			<section class="section">
+				<h2>Perfil</h2>
+				<p>
+					Estudiante comprometido y entusiasta de la Universidad Autónoma de Tamaulipas (UAT), con formación técnica en programación por el CBTIS 103. Cuento con experiencia en desarrollo web y creación de plataformas educativas. Busco constantemente nuevas oportunidades para aplicar los conocimientos adquiridos durante mi formación y desarrollar nuevas habilidades que me permitan crecer profesionalmente.
+				</p>
+			</section>
+			
+			<section class="section">
+				<h2>Educación</h2>
+				
+				<div class="timeline-item">
+					<div class="timeline-period">2022 - Presente</div>
+					<div class="timeline-title">Universidad Autónoma de Tamaulipas (UAT)</div>
+					<p>Licenciatura en Sistemas Computacionales</p>
+				</div>
+				
+				<div class="timeline-item">
+					<div class="timeline-period">2019 - 2022</div>
+					<div class="timeline-title">CBTIS 103</div>
+					<p>Título en Programación</p>
+				</div>
+			</section>
+			
+			<section class="section">
+				<h2>Habilidades</h2>
+				<div class="skills">
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>
+					<span class="skill">JavaScript</span>
+					<span class="skill">React Native</span>
+					<span class="skill">Astro</span>
+					<span class="skill">PHP</span>
+					<span class="skill">Laravel</span>
+					<span class="skill">SQL</span>
+					<span class="skill">MySQL</span>
+					<span class="skill">Programación</span>
+					<span class="skill">Robótica</span>
+					<span class="skill">Desarrollo móvil</span>
+					<span class="skill">Trabajo en equipo</span>
+					<span class="skill">Resolución de problemas</span>
+					<span class="skill">Comunicación efectiva</span>
+					<span class="skill">Adaptabilidad</span>
+					<span class="skill">Inglés intermedio</span>
+				</div>
+			</section>
+			
+			<section class="section">
+				<h2>Proyectos Académicos</h2>
+				
+				<div class="timeline-item">
+					<div class="timeline-period">2023</div>
+					<div class="timeline-title">Página para Dentista con Servidor en Laravel y App móvil</div>
+					<p>Desarrollo de una aplicación web completa para gestión de consultorio dental, incluyendo sistema de citas y expedientes médicos. Implementado con Laravel para el backend, sistema de autenticación y base de datos SQL. Complementado con una aplicación móvil desarrollada en React Native para acceso de pacientes.</p>
+					<p><i>Enlace próximamente disponible</i></p>
+				</div>
+				
+				<div class="timeline-item">
+					<div class="timeline-period">2023</div>
+					<div class="timeline-title">Plataforma de Aprendizaje de Robótica</div>
+					<p>Diseño y desarrollo de una plataforma educativa interactiva enfocada en la enseñanza de programación para robots. Incluye tutoriales, simulaciones y ejercicios prácticos.</p>
+					<p><i>Enlace próximamente disponible</i></p>
+				</div>
+				
+				<div class="timeline-item">
+					<div class="timeline-period">2024</div>
+					<div class="timeline-title">Desarrollo de Curriculum Vitae con Astro</div>
+					<p>Creación de un CV personal utilizando Astro y HTML puro, aplicando principios de diseño web moderno y responsive.</p>
+				</div>
+			</section>
+			
+			<section class="section">
+				<h2>Intereses</h2>
+				<div class="interests">
+					<span class="interest">Desarrollo Web</span>
+					<span class="interest">Inteligencia Artificial</span>
+					<span class="interest">Ciberseguridad</span>
+					<span class="interest">Nuevas tecnologías</span>
+					<span class="interest">Videojuegos</span>
+					<span class="interest">Música</span>
+				</div>
+			</section>
+			
+			<section class="section">
+				<h2>Objetivos Profesionales</h2>
+				<p>
+					Consolidarme como un profesional en el área de tecnología de la información, especializándome en desarrollo de software y contribuyendo con soluciones innovadoras a los retos tecnológicos actuales. Busco continuar mi formación académica a nivel posgrado y adquirir experiencia laboral en empresas líderes del sector.
+				</p>
+			</section>
+			
+			<footer>
+				<p>CV creado con Astro • {new Date().getFullYear()} • David Alberto Garcia Amaro</p>
+			</footer>
+		</div>
+	</body>
+</html>
